@@ -13,6 +13,9 @@ app.use(cors())
 const taskRouter = require('./app/routers/task.router')
 app.use(taskRouter)
 
+const userRouter = require('./app/routers/user.router')
+app.use(userRouter)
+
 const port = process.env.PORT || 3000
 
 app.listen(port, () => console.log('Listening on port: ' + port))
